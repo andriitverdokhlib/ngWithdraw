@@ -1,0 +1,8 @@
+<mat-chip-list>
+    <ng-container *ngFor="let amount of amountShortCusts">
+        <mat-chip (click)="chipSelected(amount)" 
+            [ngClass]="{'too-expensive': (selectedAmount | async) == amount}">
+            {{amount}}
+        </mat-chip>
+    </ng-container>
+</mat-chip-list>

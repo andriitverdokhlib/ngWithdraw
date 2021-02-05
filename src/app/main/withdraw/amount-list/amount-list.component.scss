@@ -1,0 +1,20 @@
+:host {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3vh;
+    height: 10vh;
+}
+
+mat-chip {
+    display: flex;
+    justify-content: center;
+    
+    background: rgba(32, 32, 32, 1) !important;
+    color: var(--default-text-color) !important;
+    width: 13vw;
+}
+
+.too-expensive {
+    background: var(--failure-background) !important;
+    color: var(--default-text-color) !important;
+}

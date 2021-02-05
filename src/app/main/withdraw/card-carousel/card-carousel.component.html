@@ -1,0 +1,9 @@
+<h3>Withdraw from</h3>
+
+<owl-carousel-o [options]="carouselOptions" (changed)="selectedWallet($event)">
+    <ng-container *ngFor="let wallet of wallets; let i = index">
+        <ng-template carouselSlide [id]="i">
+            <wallet [cardType]="wallet.cardType" [amount]="wallet.amount"></wallet>
+        </ng-template>
+    </ng-container> 
+</owl-carousel-o>

@@ -1,0 +1,18 @@
+:host {
+    display: flex;
+    justify-content: center;
+}
+
+.too-exepsive {
+    background: var(--failure-background) !important;
+    color: var(--default-text-color) !important;
+}
+
+button {
+    background: var(--success-background);
+    border-radius: 24px;
+    height: 6vh;
+    width: 85%;
+}
+
+

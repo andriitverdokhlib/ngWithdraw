@@ -1,0 +1,26 @@
+:host {
+    display: flex;
+    height: 16vh;
+}
+
+mat-card {
+    display: flex;
+    width: 80vw;
+    background: var(--card-background);
+    border-radius: 8px;
+
+    mat-card-header {
+        width: 70%;
+
+        mat-card-subtitle {
+            color: var(--default-text-color);
+        }
+    }
+
+    mat-card-content {
+        img {
+            width: 62px;
+            height: 62px;
+        }
+    }
+}

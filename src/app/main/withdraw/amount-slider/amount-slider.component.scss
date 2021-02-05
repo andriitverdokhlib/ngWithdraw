@@ -1,0 +1,39 @@
+$slider-height: 1vh;
+
+:host {
+
+    height: 10vh;
+    
+    ::ng-deep {
+
+        mat-slider {
+            width: 100%;
+            border-radius: 25.5px;
+        
+            .mat-slider-wrapper {
+                height: $slider-height;
+                border-radius: 25.5px;
+        
+                .mat-slider-track-background {
+                    background: rgb(68, 67, 67);
+                    height: $slider-height;
+                }
+        
+                .mat-slider-track-fill {
+                    background: var(--success-background);
+                    height: $slider-height;
+                }
+    
+            }
+        }
+    
+        .mat-slider-horizontal {
+            .mat-slider-track-wrapper {
+                height: $slider-height !important;
+                width: 100%;
+            }
+        }
+    
+    }
+}
+
